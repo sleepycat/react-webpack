@@ -1,4 +1,5 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const HtmlWebpackRootPlugin = require('html-webpack-root-plugin')
 
 module.exports = ({ mode }) => {
   return {
@@ -6,7 +7,7 @@ module.exports = ({ mode }) => {
     output: {
       filename: 'bundle.js',
     },
-    plugins: [new HtmlWebpackPlugin()],
+    plugins: [new HtmlWebpackPlugin(), new HtmlWebpackRootPlugin()],
     module: {
       rules: [
         {
