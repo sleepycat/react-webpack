@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "webpack --env.mode=production --config webpack.config.js",
-    "dev": "webpack-dev-server --env.mode=development"
+    "dev": "webpack-dev-server --hot --env.mode=development"
   },
   "keywords": [],
   "author": "",
@@ -18,11 +18,14 @@
     "@babel/core": "^7.5.0",
     "@babel/preset-env": "^7.5.0",
     "@babel/preset-react": "^7.0.0",
+    "@hot-loader/react-dom": "^16.8.6",
     "babel-loader": "^8.0.6",
     "html-webpack-plugin": "^3.2.0",
     "html-webpack-root-plugin": "^0.10.0",
+    "react-hot-loader": "^4.12.3",
     "webpack": "^4.35.2",
     "webpack-cli": "^3.3.5",
+    "webpack-config-utils": "^2.3.1",
     "webpack-dev-server": "^3.7.2"
   }
 }
