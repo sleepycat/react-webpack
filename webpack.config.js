@@ -16,6 +16,9 @@ module.exports = ({ mode }) => {
       }),
     }),
     plugins: [new HtmlWebpackPlugin(), new HtmlWebpackRootPlugin()],
+    devServer: {
+      port: 3000,
+    },
     module: {
       rules: [
         {
