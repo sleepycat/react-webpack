@@ -1,10 +1,8 @@
 import { hot } from 'react-hot-loader/root'
-import { say } from './say'
 import React from 'react'
 import { render } from 'react-dom'
+import { App } from './App'
 
-say('hello whirled')
-
-const App = hot(() => <main>Hello from React</main>)
+hot(<App />)
 
 render(<App />, document.getElementById('root'))
