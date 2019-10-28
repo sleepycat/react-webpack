@@ -4,6 +4,8 @@
 		"@babel/preset-react",
 	],
 	"plugins": [
+    "macros",
+	  "@babel/plugin-transform-runtime",
 		"react-hot-loader/babel",
 	]
 }
