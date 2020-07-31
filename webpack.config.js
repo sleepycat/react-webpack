@@ -15,7 +15,12 @@ module.exports = ({ mode }) => {
         'react-dom': '@hot-loader/react-dom',
       }),
     }),
-    plugins: [new HtmlWebpackPlugin(), new HtmlWebpackRootPlugin()],
+		plugins: [
+      new HtmlWebpackPlugin({
+        publicPath: 'public',
+        template: './src/html.js',
+      })
+		],
     devServer: {
       port: 3000,
     },
